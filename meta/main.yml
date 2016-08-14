@@ -5,7 +5,7 @@ dependencies:
     logrotate_create_logs_with_owner: "{{ apache2_user }}"
 galaxy_info:
   author: "Abhishek Pareek"
-  company: "TELUS digital"
+  company: "barajoun entertainment"
   description: "Apache2 web server"
   license: MIT
   platforms:
