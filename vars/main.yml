@@ -1,3 +1,0 @@
----
-# vars file for apache2
-dummy_text: "Welcome to apache2 index.html page. The apache2 module has been installed with makeittotop/apache2 Ansible role"

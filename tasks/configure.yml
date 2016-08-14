@@ -89,6 +89,6 @@
 - name: Add a dummy index.html in the document root dir
   lineinfile:
     dest: "{{ apache2_docroot }}/index.html"
-    line: "{{ dummy_text }}"
+    line: "Hi. Welcome to Apache2 on Ubuntu14.04!"
     state: present
-    create: yes
+    create: ye
