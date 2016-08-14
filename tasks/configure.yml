@@ -91,4 +91,4 @@
     dest: "{{ apache2_docroot }}/index.html"
     line: "Hi. Welcome to Apache2 on Ubuntu14.04!"
     state: present
-    create: ye
+    create: yes
