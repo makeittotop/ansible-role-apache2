@@ -1,0 +1,20 @@
+---
+- name: Install Packages | apt
+  apt:
+    state: latest
+    pkg: apache2
+  tags:
+    - apache2
+    - software-installation
+    - using-apt
+
+- name: Install PHP bridge | apt
+  apt:
+    state: latest
+    pkg: libapache2-mod-php5
+  when: apache2_php_enabled
+  tags:
+    - apache2
+    - php
+    - software-installation
+    - using-apt

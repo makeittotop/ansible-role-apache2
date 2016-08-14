@@ -1,0 +1,24 @@
+---
+apache2_port: 80
+apache2_user: www-data
+apache2_group: www-data
+
+apache2_runtime_root: "{{ runtime_root | default('/var/run') }}/apache2"
+apache2_pidfile_path: "{{ apache2_runtime_root }}/apache2.pid"
+apache2_socket_path: "{{ apache2_runtime_root }}/apache2.sock"
+apache2_log_root: "{{ log_root | default('/var/log') }}/apache2"
+
+apache2_docroot: /data/www/docroot
+apache2_creates_docroot: yes
+
+apache2_configuration_name: site
+
+apache2_php_enabled: no
+php_fpm_socket_path: "{{ runtime_root | default('/var/run') }}/php/fpm.sock"
+
+nginx_ssl_port: 443
+nginx_ssl_disabled: no
+nginx_ssl_enforced: no
+nginx_ssl_enabled: no
+nginx_ssl_certificate_path: /data/www/ssl.crt
+nginx_ssl_key_path: /data/www/ssl.key

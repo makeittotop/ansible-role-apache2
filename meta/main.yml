@@ -1,0 +1,20 @@
+---
+dependencies:
+  - role: telusdigital.logrotate
+    logrotate_name: apache2
+    logrotate_create_logs_with_owner: "{{ apache2_user }}"
+galaxy_info:
+  author: "Abhishek Pareek"
+  company: "TELUS digital"
+  description: "Apache2 web server"
+  license: MIT
+  platforms:
+    - name: Ubuntu
+      versions:
+      - lucid
+      - precise
+      - trusty
+      - utopic
+      - vivid
+  categories:
+    - web

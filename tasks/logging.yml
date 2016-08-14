@@ -1,0 +1,12 @@
+---
+- name: "Directory Exists | {{ apache2_log_root }}"
+  file:
+    state: directory
+    path: "{{ apache2_log_root }}"
+    owner: "{{ apache2_user }}"
+    group: "{{ apache2_group }}"
+    mode: 0775
+  tags:
+    - directory-structure
+    - logging
+    - apache2
