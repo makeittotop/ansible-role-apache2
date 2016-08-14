@@ -1,4 +1,2 @@
 ---
-- include: install.yml
-- include: configure.yml
-- include: logging.yml
+# tasks file for apache2
